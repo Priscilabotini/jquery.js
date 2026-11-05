@@ -16,20 +16,46 @@
    
 
     <div class="container">
-        <h1 class= "center"> Tarefas</h1>
-         <p class="center">Organizando seu dia!!</p>
+        <h1 class= "center"> Agenda Médica</h1>
+         <p class="center">Organizando meu dia!!</p>
 
         <ul class="center">
          <li>
             <i class="Small material-icons">event_note</i>
-            Tarefa Importante!!
+            Médico Importante!!
         </li>
-        <li>Não esqueça !!!</li>  
+        <li>Não esqueça seu compromisso!!!</li>  
      </ul>
 
      <p>Título: </p><input type="text" class="campoTitulo" />
      <p>Observações: </p> <input type="text" class="campo0bs" />
-     <p>Data e Hora: </p> <input type="datetime-local" class="campoDataHora">
+     <p>Medicamento: </p> <input type="text" class="campoMedicamento" />
+     <p>Data e Hora: </p> <input type="datetime-local" class="campoDataHora"/>
+     
+
+<select class="campoPrioridade browser-default">
+    <option value="">Selecione a prioridade</option>
+    <option value="Alto">Alto</option>
+    <option value="Médio">Médio</option>
+    <option value="Baixo">Baixo</option>
+</select>
+
+<table class="highlight">
+    <thead>
+        <tr>
+            <th>Tarefa</th>
+            <th>Observações</th>
+            <th>Medicamento</th>
+            <th>Data e Hora</th>
+            <th>Prioridade</th>
+            <th>Apagar</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
      <div class="divBotao">
         <a id="botao" class="btn-floating btn-large waves-effect waves-light red">
             <i class="material-icons">arrow_downward</i>
@@ -38,15 +64,14 @@
     <section class="tarefas">
         <table class="highight">
         <thead>
-            
-
-        
         
             <thead>
                 <tr>
                     <th>Tarefa</th>
                     <th>Observações</th>
+                    <th>Medicamento</th>
                     <th>Data e Hora</th>
+                    <th>Prioridade</th>
                     <th>Apagar</th>
                 </tr>
 
